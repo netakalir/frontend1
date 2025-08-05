@@ -11,10 +11,17 @@
     <main>
         <form action="./agreements.html" method="get">
             <fieldset>
-                <legend>Upload Documents</legend>
-                upload file:
-                <input type="file" name="file" required>
+                <legend>conditions</legend>
+                Do you agree to the site terms?:
+                <label>
+                    <input type="checkbox" name="conditions" value="agree" required>
+                    agree
+                </label>
 
+                <label>
+                    <input type="checkbox" name="conditions" value="Reject">
+                    Reject
+                </label>
             </fieldset>
             <br>
             <button type="submit">Upload & Continue</button>
