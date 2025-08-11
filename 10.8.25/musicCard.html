@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            place-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        main {
+            background-color: #192038;
+            height: 95vh;
+            width: 48vh;
+            padding: 1em;
+            margin: 1em;
+            align-items: center;
+        }
+
+        #header {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        icon .img {
+            width: 24px;
+            height: 24px;
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 1px;
+        }
+
+        icon .img1 {
+            width: 24.17px;
+            height: 21px;
+            padding-top: 10.5px;
+            padding-left: 4.03px;
+        }
+
+        icon .img2 {
+            width: 40.29px;
+            height: 40px;
+            padding-top: 4px;
+            padding-left: 4.03px;
+        }
+
+        icon .img3 {
+            width: 15.86px;
+            height: 18px;
+            padding-top: 12px;
+            padding-left: 9.82px;
+        }
+
+        #sectionHead {
+            display: grid;
+            grid-template-rows: 75% 7.5% 15% 14% 10%;
+            grid-template-columns: 0.8fr 1.1fr 1.4fr 1fr 3.2fr 1fr 1fr 1fr 1.2fr 1fr 1fr 0.2fr
+        }
+
+        #baseImage {
+            margin-top: 5px;
+            grid-column: 3/10;
+            grid-row: 1/4;
+            max-height: 232px;
+            max-width: 248px;
+        }
+
+        #p1 {
+            color: white;
+            grid-column: 5/10;
+            grid-row: 2/3;
+        }
+
+        #h6 {
+            color: white;
+            grid-column: 4/12;
+            grid-row: 3/4;
+        }
+
+        #CommandLine {
+            grid-column: 1/12;
+            grid-row: 4/6;
+            display: flex;
+            justify-content: space-around;
+            padding-top: 5px;
+            padding-bottom: 20px;
+        }
+
+        #OperatingTime {
+            grid-column: 1/12;
+            grid-row: 5/6;
+        }
+        
+        #OperatingTime img {
+            padding-top: 10px;
+            width: 340px;
+            height: 30px;
+            max-width: 343px;
+        }
+        
+        
+    </style>
+</head>
+
+<body>
+    <main>
+        <header id="header">
+            <icon><img class="img" src="icon1.png" alt=""></icon>
+            <div>
+                <icon><img class="img" src="icon2.png" alt=""></icon>
+                <icon><img class="img" src="icon3.png" alt=""></icon>
+            </div>
+        </header>
+
+        <section id="sectionHead">
+            <img id="baseImage" src="baseImage.png" alt="">
+            <p id="p1">Sounds Worth Saving</p>
+            <h6 id="h6">Twenty Thousand Hertz, Dallas Taylor</h6>
+            <div id="CommandLine">
+                <icon><img class="img1" src="icon4.png" alt=""></icon>
+                <icon><img class="img3" src="icon5.png" alt=""></icon>
+                <icon><img class="img2" src="icon6.png" alt=""></icon>
+                <icon><img class="img3" src="icon7.png" alt=""></icon>
+                <icon><img class="img1" src="icon8.png" alt=""></icon>
+            </div>
+            <div id="OperatingTime">
+                <icon><img src="icon9.png" alt=""></icon>
+            </div>
+        </section>
+
+        <section id="sectionBottom">
+
+        </section>
+    </main>
+</body>
+
+</html>
