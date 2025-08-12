@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>payment details</title>
@@ -14,12 +15,13 @@
                 <legend>payment details</legend>
                 <label>
                     cardNumber:
-                    <input type="text" name="Card number" minlength="13" maxlength="19" pattern="[0-9\s]{13,19}" placeholder="1234 5678 1234 5678">
+                    <input type="text" name="Card number" minlength="13" maxlength="19" pattern="[0-9\s]{13,19}"
+                        placeholder="1234 5678 1234 5678">
                 </label>
 
                 <label>
                     validity:
-                    <input type="month" name="date" min="2025-08" >
+                    <input type="month" name="date" min="2025-08">
                 </label>
 
                 <label>
@@ -27,7 +29,7 @@
                     <input type="password" name="CVV" minlength="3" maxlength="4">
                 </label>
             </fieldset>
-            <br>    
+            <br>
             <button type="submit">Confirm card details</button>
         </form>
     </main>

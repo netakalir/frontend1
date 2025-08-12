@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        #baseSection {
+            background-color: whitesmoke;
+            margin: 5vh auto;
+            padding: 2em;
+            width: 70vw;
+            /* רחב ב-80% מרוחב המסך */
+            height: 85vh;
+            /* תופס 85% מגובה החלון */
+            max-width: 400px;
+            /* לא יחרוג ברזולוציות גדולות */
+            max-height: 700px;
+            /* גבול עליון לגובה */
+            border-radius: 40px;
+        }
+
+        h1 {
+            display: inline-block;
+            color: black;
+            font-size: 1.3em;
+            margin: 0em 0em 2em 0em;
+            padding: 0em 1.9em 0em 1.5em;
+        }
+
+        img {
+            height: 10em;
+            width: 20em;
+            padding: 0em 2em;
+            margin: 0em 0em 2em 0em;
+        }
+
+        h2 {
+            display: inline-block;
+            color: black;
+            font-size: 1em;
+            margin: 0em 0em 0.5em 0em;
+            padding: 0em 5.5em;
+        }
+
+        #p6 {
+            display: inline-block;
+            margin: 0em 0em 2em 0em;
+            padding: 0em 2.9em 0em 1.5em;
+        }
+
+        #p7 {
+            display: inline-block;
+            margin: 0em 0em 2em 0em;
+            padding: 0em 1em 0em 1.5em;
+        }
+
+        #p1 {
+            color: #bfbfbf;
+        }
+
+        input {
+            font-size: 1em;
+            border-style: groove;
+            border-color: #CCCCCC;
+            color: #1B1B1B;
+            display: block;
+            margin: 0em 0em 1.5em;
+            padding: 0.5em 6em 0.5em 1.5em;
+        }
+
+        button {
+            width: 10em;
+            display: block;
+            padding: 1em 1em 1em 0em;
+            border-radius: 25em;
+            background-color: #14d6ec;
+            margin: 2em 0em 0em 20em;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section id="baseSection">
+            <p id="p6"> 🔙 </p>
+            <h1>Adding new card</h1>
+            <p id="p7"> 🔔 </p>
+            <img src="../image.png" alt="">
+            <h2>Fill in with your card details:</h2>
+            <p id="p1">Card Number:</p>
+            <input type="text" name="Card number" minlength="13" maxlength="19" pattern="[0-9\s]{13,19}"
+                placeholder="1234 1234 1234 1234">
+            <p id="p1">validity:</p>
+            <input type="month" name="date" min="2025-08">
+            <p id="p1">CVV:</p>
+            <input type="password" name="CVV" minlength="3" maxlength="3" placeholder="111">
+            <button type="submit">Next ⇒</button>
+        </section>
+    </main>
+</body>
+
+</html>

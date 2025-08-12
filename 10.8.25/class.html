@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua
+        }
+        
+        article p:first-child{
+            font-weight: bold;
+        }
+        article p:first-child:first-letter{
+            font-size: 20px;
+            color: blueviolet;
+        }
+        article :nth-child(2)::first-line{
+            font-style: italic;
+        }
+        article :nth-child(2)::before,:nth-child(2)::after {
+            
+        }
+        
+
+
+        section{
+            width: 45vh;
+            height: 85vh;
+            background-color: white;
+            margin: 5em 15em;
+            border-radius: 15px;
+        }
+        header{
+            display: flex;
+            justify-content:space-around;
+            padding: 10% 20% 0em 2%;
+        }
+        h1{
+            margin-left: 5%;
+        }
+        legend{
+            font-size: small;
+        }
+        fieldset{
+            height: auto;
+            width: auto;
+        }
+        input{
+            height: 20px;
+        }
+        input:required{
+            border-color: rgba(246, 7, 7, 0.732);
+        }
+        button{
+            margin:5% ;
+            display: block;
+        }
+        p{
+            /* padding: 0% 0% 0% 0%; */
+            
+        }
+        /* table{
+            border-color: red;
+        } */
+    </style>
+</head>
+<body>
+    <main>
+        <!-- <section>
+            <form action="localhost:3000" method="get">
+                <header>
+                    <p>home</p>
+                    <p>blog</p>
+                </header>
+                <h1>contact us</h1>
+                <fieldset>
+                    <legend>Email</legend>
+                    <input required type="email" placeholder="you@example.com">
+                </fieldset>
+                <input type="checkbox" name="" id=""> get daily tips
+
+                <fieldset>
+                    <p>how would you like to receive tips</p>
+                </fieldset>
+                
+                <button type="submit">OK</button>
+            </form>
+        </section> -->
+        <!-- <p>p1</p>
+        <div>p2</div>
+        <p>p3</p>
+        <p>p4</p>
+        <p>p5</p>
+        <p>p6</p> -->
+        <article>
+            <p>netanel kalir</p>
+            <p>namoi kalir</p>
+        </article>
+    </main>
+</body>
+</html>

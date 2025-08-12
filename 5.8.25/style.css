@@ -1,8 +1,22 @@
+body{
+    background-color: bisque;
+}
+
 h1{
-    font-size: 32px;
+    font-size: 30px;
     font-style:normal;
-    background-color: greenyellow;
-    color: green;
+    background-color: cadetblue;
+    color: black;
+    border-radius: 200px;
+    display: inline-block;
+}
+#h1-2{
+    font-size: 30px;
+    font-style:normal;
+    background-color: rgb(160, 118, 95);
+    color: black;
+    border-radius: 200px;
+    display: inline-block;
 }
 
 p{
@@ -10,10 +24,30 @@ p{
     font-style: italic;
     background-color: rgba(128, 128, 128, 0.879);
     color: black;
+    display: inline-block;
 }
 
-img{
-    width: 350px;
-    height: 380px;
-    border-radius: 450px;
+
+label{
+    color: blue;
+}
+#label2{
+    color:chocolate;
+}
+
+#input1{
+    width: 120px;
+}
+
+#button1{
+    background-color: darkkhaki;
+}
+
+#button2{
+    background-color: firebrick;
+}
+
+
+#input2{
+    
 }

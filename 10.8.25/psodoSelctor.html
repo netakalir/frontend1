@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        form,
+        label,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+
+        body {
+            background-color: #EEF1F7;
+            display: grid;
+            place-items: center;
+            min-height: 100vh;
+        }
+
+        fieldset {
+            background-color: #F2EEF6;
+            border-color: #664FA2;
+            border-radius: 15px;
+            width: 80vh;
+            height: 20vh;
+            margin: 50px;
+        }
+
+        main fieldset:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        button {
+            width: 22px;
+            height: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0px;
+        }
+
+        #h4 {
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        #legend {
+            font-size: 14px;
+            color: rgb(119, 116, 116);
+        }
+
+
+        #darkMode:checked~fieldset {
+            background-color: rgb(76, 73, 73);
+            color: white;
+        }
+
+        article {
+            margin: 15px 0px 0px 5px;
+            color: #71718F;
+        }
+
+        article p:first-child::first-letter {
+            margin-right: 5px;
+            font-size: 35px;
+            color: #44A6B9;
+            text-transform: uppercase;
+            float: inline-start;
+            line-height: 32px;
+        }
+
+        article p::first-line {
+            color: #223447;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <legend id="legend">
+        </legend>
+        darkMode
+        <input id="darkMode" type="checkbox">
+        <fieldset>
+            <header>
+                <h4 id="h4">Getting Started with React</h4>
+            </header>
+            <article>
+                <p>
+                    react is a powerful JavaScript library for building user interfaces. In this post, we explore the
+                    fundamentals of component-based architecture and how it can help you create maintainable and
+                    scalable applications. From JSX syntax to state management, discover the key concepts that make
+                    React so popular among developers
+                </p>
+
+            </article>
+        </fieldset>
+        <fieldset>
+            <header>
+                <h4 id="h4">The Future of Web Development</h4>
+            </header>
+            <article>
+                <p>
+                    web development is constantly evolving with new technologies and frameworks emerging regularly. This
+                    article discusses the latest trends in frontend development, including serverless architectures,
+                    edge computing, and the growing importance of performance optimization. Learn what skills will be
+                    most valuable in the coming years.
+                </p>
+
+            </article>
+        </fieldset>
+        <fieldset>
+            <header>
+                <h4 id="h4">CSS Grid vs Flexbox: When to Use What</h4>
+            </header>
+            <article>
+                <p>
+                    understanding when to use CSS Grid versus Flexbox can be confusing for many developers. This
+                    comprehensive guide breaks down the strengths and use cases of each layout method. We'll explore
+                    practical examples and provide clear guidelines to help you choose the right tool for your layout
+                    needs.
+                </p>
+
+            </article>
+        </fieldset>
+        <fieldset>
+            <header>
+                <h4 id="h4">Building Accessible Web Applications</h4>
+            </header>
+            <article>
+                <p>
+                    accessibility should be a fundamental consideration in all web development projects. This post
+                    covers essential accessibility principles, including semantic HTML, ARIA attributes, keyboard
+                    navigation, and screen reader compatibility. Learn how to create inclusive experiences that work for
+                    all users, regardless of their abilities.
+                </p>
+
+            </article>
+        </fieldset>
+        <fieldset>
+            <header>
+                <h4 id="h4">State Management in Modern React</h4>
+            </header>
+            <article>
+                <p>
+                    managing state effectively is crucial for building robust React applications. We examine various
+                    state management solutions, from React's built-in useState and useContext hooks to popular libraries
+                    like Redux and Zustand. Discover which approach works best for different application sizes and
+                    complexity levels.
+                </p>
+
+            </article>
+        </fieldset>
+
+    </main>
+</body>
+
+</html>

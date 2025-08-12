@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ticket & Workshops</title>
@@ -9,11 +10,11 @@
 
 <body>
     <main>
-        <h1>Ticket & Workshops</h1>
+        <h1 id="h1-2">Ticket & Workshops</h1>
         <form action="./ticket.html" method="get">
             <fieldset>
                 <legend>ticket</legend>
-                <label>
+                <label id="label2">
                     <select name="ticket" required>
                         <option>Choose ticket type</option>
                         <option value="Standard">standard</option>
@@ -26,18 +27,18 @@
             <fieldset>
                 <legend>select workshop:</legend>
 
-                <label>
-                    <input type="checkbox" name="workshop" value="Web Performance">
+                <label id="label2">
+                    <input id="input2" type="checkbox" name="workshop" value="Web Performance">
                     Web Performance
                 </label>
 
-                <label>
-                    <input type="checkbox" name="workshop" value="Accessiblity">
+                <label id="label2">
+                    <input id="input2" type="checkbox" name="workshop" value="Accessiblity">
                     Accessiblity
                 </label>
 
-                <label>
-                    <input type="checkbox" name="workshop" value="Testing">
+                <label id="label2">
+                    <input id="input2" type="checkbox" name="workshop" value="Testing">
                     Testing
                 </label>
             </fieldset>
@@ -45,27 +46,27 @@
             <fieldset>
                 <legend>select diat:</legend>
 
-                <label>
+                <label id="label2">
                     <input type="radio" name="diat" value="None">
                     None
                 </label>
 
-                <label>
+                <label id="label2">
                     <input type="radio" name="diat" value="vegan">
                     vegan
                 </label>
 
-                <label>
+                <label id="label2">
                     <input type="radio" name="diat" value="Halal">
                     Halal
                 </label>
 
-                <label>
+                <label id="label2">
                     <input type="radio" name="diat" value="Kosher">
                     Kosher
                 </label>
 
-                <label>
+                <label id="label2">
                     <input type="radio" name="diat" value="Other">
                     Other
                     <select name="diat" required>
@@ -76,7 +77,7 @@
                 </label>
             </fieldset>
 
-            <button type="submit">Ticket & Workshops</button>
+            <button id="button2" type="submit">Ticket & Workshops</button>
 
         </form>
 
