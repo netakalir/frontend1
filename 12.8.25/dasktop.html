@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body {
+            width: 100vw;
+            height: 100vw;
+            background-color: #2D3857;
+            overflow-x: hidden;
+            
+        }
+
+        main {
+            display: grid;
+            grid-template-rows: 20vw 80vw;
+            grid-template-columns: 20vw 80vw;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            grid-row: 1/2;
+            grid-column: 1/-1;
+        }
+
+        #logo {
+            width: 15vw;
+        }
+
+        #signup {
+            border-radius: 30px;
+            margin: 10px 40px 0px 0px;
+            width: 8vw;
+            color: white;
+            background-color: transparent;
+            border: 2px solid #218656;
+        }
+
+        #signup:hover{
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.632);
+            transform: scale(1.05);
+        }
+
+        #link{
+            color: white;
+            margin: 10px 0px 0px 0px;
+            padding: 10px 10px 0px 10px;
+        }
+
+        .nav{
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header>
+            <nav class="nav">
+                <img id="logo" src="asset\logo.png" alt="logo">
+                <a id="link" href="a.html">our team</a>
+                <a id="link" href="b.html">tokens</a>
+                <a id="link" href="c.html">connect wallet</a>
+                <a id="link" href="d.html">lightpaper </a>
+            </nav>
+            <nav class="nav">
+                <a id="link" href="e.html">sign in</a>
+                <button id="signup" type="submit">sign up</button>
+            </nav>
+        </header>
+    </main>
+</body>
+
+</html>
