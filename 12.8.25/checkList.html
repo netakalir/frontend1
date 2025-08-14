@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>רשימת קניות</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+    .container {
+        background: white;
+        padding: 20px;
+        border-radius: 15px;
+        width: 90%;
+        max-width: 400px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+        text-align: center;
+        color: #218656;
+    }
+    .input-group {
+        display: flex;
+        margin-bottom: 15px;
+    }
+    input {
+        flex: 1;
+        padding: 10px;
+        border-radius: 10px 0 0 10px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+    button {
+        background: #218656;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 0 10px 10px 0;
+        cursor: pointer;
+        font-size: 16px;
+    }
+    button:hover {
+        background: #1b6a45;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+    li {
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #eee;
+    }
+    li:last-child {
+        border-bottom: none;
+    }
+    li input[type="checkbox"] {
+        margin-left: 10px;
+    }
+    .done {
+        text-decoration: line-through;
+        color: gray;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>רשימת קניות</h2>
+    <div class="input-group">
+        <input type="text" id="itemInput" placeholder="הוסף מוצר...">
+        <button onclick="addItem()">הוסף</button>
+    </div>
+    <ul id="shoppingList">
+        <li><input type="checkbox" onchange="toggleItem(this)"> חלב</li>
+        <li><input type="checkbox" onchange="toggleItem(this)"> לחם</li>
+        <li><input type="checkbox" onchange="toggleItem(this)"> ביצים</li>
+        <li><input type="checkbox" onchange="toggleItem(this)"> ירקות</li>
+        <li><input type="checkbox" onchange="toggleItem(this)"> פירות</li>
+    </ul>
+</div>
+
+<script>
+function addItem() {
+    const input = document.getElementById('itemInput');
+    const value = input.value.trim();
+    if (value) {
+        const li = document.createElement('li');
+        li.innerHTML = `<input type="checkbox" onchange="toggleItem(this)"> ${value}`;
+        document.getElementById('shoppingList').appendChild(li);
+        input.value = '';
+    }
+}
+function toggleItem(checkbox) {
+    const li = checkbox.parentElement;
+    if (checkbox.checked) {
+        li.classList.add('done');
+    } else {
+        li.classList.remove('done');
+    }
+}
+</script>
+</body>
+</html>
